@@ -66,16 +66,6 @@ After successful login, users can access a private dashboard where task-related 
 
 ---
 
-## 🛠 Installation & Setup
-
-```bash
-git clone https://github.com/your-username/task-sphere-dashboard.git
-cd task-sphere-dashboard
-npm install
-npm run dev
-```
-
----
 
 ## 📌 Environment Variables
 
