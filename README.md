@@ -1,16 +1,101 @@
-# React + Vite
+# 🧩 TaskSphere Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern single-page React dashboard application featuring secure authentication and dynamic task management. Built as a frontend-focused project integrating a REST API with a clean and responsive UI.
 
-Currently, two official plugins are available:
+## 🌐 Live Site
+https://your-deployment-link.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🖼️ Project Overview
 
-## React Compiler
+TaskSphere Dashboard is a React-based frontend application that includes a secure login system and a protected dashboard page. The application interacts with a REST API for authentication and data fetching.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+After successful login, users can access a private dashboard where task-related data is displayed dynamically. The UI is designed to closely match the provided dashboard design and ensures responsiveness across all devices.
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Frontend
+
+- React (Vite)
+- React Router DOM
+- Axios / Fetch API
+- Tailwind CSS
+- Context API / Local Storage (Authentication Handling)
+
+### Backend (Provided REST API)
+
+- Authentication Endpoint
+- Task Data API
+- JWT Token-Based Login
+
+---
+
+## ⭐ Main Features
+
+- 🔐 Secure Login System (JWT Token-based Authentication)
+- 🔒 Private Route Protection (Dashboard accessible only after login)
+- 💾 Persistent Authentication (No logout on page refresh)
+- 📊 Dynamic Dashboard Data from REST API
+- 🎨 Clean UI based on provided design
+- 📱 Fully Responsive (Mobile, Tablet, Desktop)
+- ⏳ Loading & Error Handling
+- ❌ 404 Not Found Page
+- ✨ Smooth UI Transitions & Modern Aesthetics
+
+---
+
+## 🔑 Authentication Flow
+
+- User submits email & password
+- POST request sent to `/api/login`
+- JWT token received from API
+- Token stored in localStorage
+- Protected routes validated using token
+- Redirect to Dashboard upon success
+
+---
+
+## 📦 Dependencies
+
+### Client
+
+- react
+- react-router-dom
+- axios
+- tailwindcss
+- react-icons
+
+---
+
+## 🛠 Installation & Setup
+
+```bash
+git clone https://github.com/your-username/task-sphere-dashboard.git
+cd task-sphere-dashboard
+npm install
+npm run dev
+```
+
+---
+
+## 📌 Environment Variables
+
+Create a `.env` file in the root:
+
+```
+VITE_API_BASE_URL=https://task-api-eight-flax.vercel.app
+```
+
+---
+
+## 📤 Deployment
+
+This project is deployed using:
+
+- Vercel / Netlify
+
+---
+
+## 👨‍💻 Author
+
+Mahmuda Afroz Oishi  
+Frontend Developer | React Enthusiast
